@@ -107,6 +107,12 @@ Run the following command for evaluation:
 ```
 ./tools/dist_test.sh efficientPS_multigpu_sample.py ${CHECKPOINT_FILE} ${GPU_NUM} --eval panoptic
 ```
+for libGL.so.1 shared object file, which is required by cv2 (OpenCV) library to handle graphical operations.
+``` bash
+sudo apt-get update
+sudo apt-get install libgl1-mesa-glx
+```
+
 ## Pre-Trained Models
 | Dataset   |  Model | 
 |-----------|:-----------------:|
