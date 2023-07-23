@@ -113,6 +113,10 @@ sudo apt-get update
 sudo apt-get install libgl1-mesa-glx
 sudo apt-get install libglib2.0-0
 ```
+Option: Upgrade numpy when mmcv and numpy versions are not applicable:
+``` bash
+pip install --upgrade numpy
+```
 
 ## Pre-Trained Models
 | Dataset   |  Model | 
