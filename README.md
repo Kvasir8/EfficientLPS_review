@@ -1,3 +1,6 @@
+# Installation is adjusted based on docker environment for nvidia RTX3080
+The installation description is almost the same but adjusted below.
+
 # EfficientLPS: Efficient LiDAR Panoptic Segmentation
 EfficientLPS is a state-of-the-art top-down approach for LiDAR panoptic segmentation, where the goal is to assign semantic labels (e.g., car, road, tree and so on) to every point in the input LiDAR point cloud as well as instance labels (e.g. an id of 1, 2, 3, etc) to points belonging to thing classes.
 
@@ -39,13 +42,23 @@ a. Create a conda virtual environment from the provided environment.yml and acti
 ```shell
 git clone https://github.com/robot-learning-freiburg/EfficientLPS.git
 cd EfficientLPS
-conda env create -n efficientLPS_env --file=environment.yml
-conda activate efficientLPS_env
+conda env create -n lps --file=environment.yml
+conda activate lps
 ```
 b. Install all other dependencies using pip:
 ```bash
-pip install -r requirements.txt
+pip install --upgrade pip setuptools
+pip install --upgrade setuptools wheel cython
+pip install pycocotools
+pip install git+https://github.com/waspinator/pycococreator.git@0.2.0
+pip install git+https://github.com/mapillary/inplace_abn.git
 ```
+b.1. Optional: when "pip install pycocotools" fails
+```bash
+pip uninstall typing
+pip install typing
+```
+
 c. Install EfficientNet implementation
 ```bash
 cd efficientNet
