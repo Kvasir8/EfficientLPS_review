@@ -118,6 +118,9 @@ Option: Upgrade numpy when mmcv and numpy versions are not applicable:
 pip install --upgrade numpy
 ```
 
+Somehow you encounter: GeForce RTX 3080 with CUDA capability sm_86 is not compatible with the current PyTorch installation (https://github.com/pytorch/pytorch/issues/45028)
+A possible solution would be make cuda 11.1 container for proper GPU support
+
 ## Pre-Trained Models
 | Dataset   |  Model | 
 |-----------|:-----------------:|
