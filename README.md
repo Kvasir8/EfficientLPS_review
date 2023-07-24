@@ -3,6 +3,7 @@ The installation description is almost the same but adjusted below.
 
 # prerequisite
 Make sure we create the container from nvidia pytorch image (https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)
+
 Option: To resolve WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager.
 set up a virtual environment:
 Install virtualenv (if you haven't already) using your package manager or pip:
@@ -16,6 +17,10 @@ mkdir ~/myenv
 Create a new virtual environment inside the chosen directory (replace myenv with your preferred environment name):
 ```bash
 virtualenv ~/myenv
+```
+Activate the virtual environment:
+```bash
+source ~/myenv/bin/activate
 ```
 
 # EfficientLPS: Efficient LiDAR Panoptic Segmentation
