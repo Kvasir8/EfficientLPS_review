@@ -2,8 +2,9 @@
 The installation description is almost the same but adjusted below.
 
 # prerequisite
-Make sure the cuda is properly setup
+Make sure the cuda is properly setup in the container
 ```bash
+docker run --runtime=nvidia --rm --gpus all -it -v /mnt/hdd/:/data nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04 /bin/bash
 export CUDA_HOME=/usr/local/cuda/
 ```
 
