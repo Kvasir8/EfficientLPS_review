@@ -1,11 +1,21 @@
-# Installation is adjusted based on docker environment for nvidia RTX3080
+# Installation is adjusted based on nvidia-docker setup for RTX3080
 The installation description is almost the same but adjusted below.
 
 # prerequisite
-Make sure the cuda is properly setup in the container
+Make sure we create the container from nvidia pytorch image (https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch)
+Option: To resolve WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager.
+set up a virtual environment:
+Install virtualenv (if you haven't already) using your package manager or pip:
 ```bash
-docker run --runtime=nvidia --rm --gpus all -it -v /mnt/hdd/:/data nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04 /bin/bash
-export CUDA_HOME=/usr/local/cuda/
+pip install virtualenv
+```
+Choose a directory where you want to create your virtual environment. For example, you can create a directory called myenv in your home folder:
+```bash
+mkdir ~/myenv
+```
+Create a new virtual environment inside the chosen directory (replace myenv with your preferred environment name):
+```bash
+virtualenv ~/myenv
 ```
 
 # EfficientLPS: Efficient LiDAR Panoptic Segmentation
