@@ -2,9 +2,9 @@
 The installation description is almost the same but adjusted below.
 
 # prerequisite
-```bash
 Make sure the cuda is properly setup
-e.g. export CUDA_HOME=/usr/local/cuda/
+```bash
+export CUDA_HOME=/usr/local/cuda/
 ```
 
 # EfficientLPS: Efficient LiDAR Panoptic Segmentation
