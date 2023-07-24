@@ -62,8 +62,8 @@ https://rl.uni-freiburg.de/research/lidar-panoptic
 ## Installation
 a. Create a conda virtual environment from the provided environment.yml and activate it.
 ```shell
-git clone https://github.com/robot-learning-freiburg/EfficientLPS.git
-cd EfficientLPS
+git clone https://github.com/robot-learning-freiburg/EfficientLPS_review.git
+cd EfficientLPS_review
 conda env create -n lps --file=environment.yml
 conda activate lps
 ```
