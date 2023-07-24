@@ -1,6 +1,12 @@
 # Installation is adjusted based on docker environment for nvidia RTX3080
 The installation description is almost the same but adjusted below.
 
+# prerequisite
+```bash
+Make sure the cuda is properly setup
+e.g. export CUDA_HOME=/usr/local/cuda/
+```
+
 # EfficientLPS: Efficient LiDAR Panoptic Segmentation
 EfficientLPS is a state-of-the-art top-down approach for LiDAR panoptic segmentation, where the goal is to assign semantic labels (e.g., car, road, tree and so on) to every point in the input LiDAR point cloud as well as instance labels (e.g. an id of 1, 2, 3, etc) to points belonging to thing classes.
 
