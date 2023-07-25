@@ -129,7 +129,7 @@ Run the following command for evaluation:
 ```
 ./tools/dist_test.sh configs/efficientLPS_multigpu_sample.py ${CHECKPOINT_FILE} ${GPU_NUM} --eval panoptic
 e.g.
-./tools/dist_test.sh configs/efficientLPS_multigpu_sample.py pretrained/ 1 --eval panoptic
+./tools/dist_test.sh configs/efficientLPS_multigpu_sample.py EfficientLPS_pretrained/ 1 --eval panoptic
 ```
 Option: running error occurred libGL.so.1 / libgthread-2.0.so.0 shared object file, which is required by cv2 (OpenCV) library to handle graphical operations.
 ``` bash
